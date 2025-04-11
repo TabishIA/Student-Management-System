@@ -1,0 +1,218 @@
+/* Ensure global.css overrides index.css where needed */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  color: #2c3e50;
+  overflow-x: hidden;
+}
+
+.dashboard-container {
+  padding: 60px 20px 20px; /* Increased padding to account for Header */
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2c3e50; /* Fixed color syntax */
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: white; /* Changed to dark text for readability */
+  background-color: #2c3e50; /* Explicitly set white background */
+  text-align: center; /* Ensure centering */
+  padding: 10px; /* Add padding for better appearance */
+}
+
+.card p {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.card li {
+  padding: 10px 0;
+  background: transparent; /* Override index.css li background */
+  box-shadow: none; /* Override index.css li shadow */
+}
+
+.announcements-section,
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+.announcements-section h3,
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: 2c3e50; /* Changed to dark text */
+  background-color: white; /* Ensure white background */
+  text-align: center; /* Ensure centering */
+}
+
+.announcements-section ul,
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.announcements-section li,
+.card li {
+  padding: 10px 0;
+  border-bottom: 1px solid #dfe6e9;
+  font-size: 16px;
+  color: #2c3e50;
+  background: transparent; /* Override index.css */
+  box-shadow: none; /* Override index.css */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 15px;
+  border: 1px solid #dfe6e9;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  background: #f9fbfc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+.form-group select {
+  appearance: none;
+  background: #f9fbfc url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="gray" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 15px center;
+  padding-right: 35px;
+}
+
+button {
+  padding: 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.custom-link {
+  display: block;
+  margin-top: 15px;
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: #3498db;
+}
+
+.styled-select {
+  padding: 12px 15px;
+  border: 1px solid #dfe6e9;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  background: #f9fbfc url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="gray" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 15px center;
+  padding-right: 35px;
+  appearance: none;
+}
+
+.styled-select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+th {
+  background: #ecf0f1;
+  color: #2c3e50;
+}

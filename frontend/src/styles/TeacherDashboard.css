@@ -1,0 +1,71 @@
+.dashboard-container {
+  margin-left: 250px; /* Match sidebar width */
+  padding: 60px 20px 20px;
+  min-height: calc(100vh - 60px); /* Full height minus header */
+  width: calc(100% - 250px); /* Fill remaining width */
+  background: #f4f7fa; /* Light background for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Ensure content stays in front */
+  z-index: 1; /* Above sidebar if needed */
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+  padding: 20px;
+  max-width: 1200px; /* Center content */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.summary-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  color: #2c3e50; /* Ensure readable text color */
+}
+
+.summary-card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.summary-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.summary-card li {
+  padding: 12px 0;
+  border-bottom: 1px solid #dfe6e9;
+  font-size: 16px;
+  color: #2c3e50; /* Ensure contrast */
+}
+
+.student-list {
+  margin-top: 20px;
+}
+
+.student-list h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.student-list ul {
+  padding-left: 20px;
+}
+
+.student-list li {
+  padding: 8px 0;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: white;
+}

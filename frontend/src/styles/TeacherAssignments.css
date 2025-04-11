@@ -1,0 +1,23 @@
+/* Minimal unique styles */
+.dashboard-container {
+    margin-left: 250px;
+    padding: 60px 20px 20px;
+    min-height: calc(100vh - 60px);
+    width: calc(100% - 250px);
+    background: #f4f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .form-group {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px; /* Center content */
+    margin: 0 auto; /* Center horizontally */
+  }
