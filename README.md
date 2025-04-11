@@ -50,7 +50,7 @@ This is a web-based Student Management System built using React for the frontend
 
 3. **Configure the Database:**
    - Create a MySQL database and import the schema from `schema.sql` (provided earlier).
-   - Update the database connection in `server/db.js` with your credentials.
+   - Update the database connection in `db.js` with your credentials.
 
 4. **Environment Variables:**
    - Create a `.env` file in the `server` directory with:
