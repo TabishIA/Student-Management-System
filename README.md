@@ -13,7 +13,7 @@ This is a web-based Student Management System built using React for the frontend
   - Manage classes and assign subjects.
   - Record attendance and marks for students.
   - Create and manage assignments and announcements.
-- **Admin Features:** (Not fully implemented yet)
+- **Admin Features:** 
   - User management and school configuration.
 
 ## Technologies Used
